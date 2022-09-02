@@ -1,4 +1,4 @@
-package desafio7Metodos;
+package desafio.poo.modelagemobjeto.imobiliaria;
 
 public class Imovel {
 
@@ -10,15 +10,23 @@ public class Imovel {
 	int varanda;
 	String cor;
 	double aluguel;
-
-	Locatario locatario;
-	Situacao disponibilidade;
+	
+	SituacaoImovel situacao;
+	
+	Imovel(){
+		situacao = SituacaoImovel.DISPONIVEL;
+	}
 
 	void exibirDescricaoImovel() {
 		System.out.println(
 				"Kitnet " + id + "\n" + "\nDESCRIÇÃO" + "\ncozinha: " + cozinha + "\nsala: " + sala + "\nquarto: "
 						+ quarto + "\nbanheiro: " + banheiro + "\nvaranda: " + varanda + "\ncor: " + cor + "\naluguel: "
-						+ aluguel);
+						+ aluguel + "\nsituação: " + situacao);
+	}
+	
+	SituacaoImovel trocarSituacao(SituacaoImovel novaSituacao) {
+		//TODO
+		return novaSituacao;
 	}
 	
 }
