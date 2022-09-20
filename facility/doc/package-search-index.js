@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"facility.emoction"},{"l":"facility.emoction.main"}];updateSearchResults();
